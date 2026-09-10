@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
 </head>
 <body>
-    <div class="heading"><h1>Hi! What's on your mind today?</h1></div>
+    <div id="tsparticles"></div>
     <div class="nav">
     <a href="#" id="home-nav">Home</a>
     <a href="#" id="profile-nav">Profile</a>
     <a href="#" id="storage-nav">Storage</a>
     </div>
-    <div class="input-box"><input type="text" placeholder="Spill it!" id="input"></div>
-    <button id="save-button">Save</button>
+    <div class="heading"><h1 id="header">Hi! What's on your mind today?</h1></div>
+    <div class="input-box"><textarea type="text" id="input"></textarea></div>
+    <button class="save-button" onclick="SaveButton()">Save</button>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.0.0/particles.min.js"></script>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
