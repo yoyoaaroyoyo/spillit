@@ -1,14 +1,13 @@
-let count = 0;
-const btn = getElementById("save-button");
-
-btn.addEventListener('click', () => {
-    count++;
-});    
+let count = 1;
+const btn = document.getElementById("save-button");
+console.log("Button: " + btn);
 
 function SaveButton() {
-    const a = getElementById("input");
-    for (let i = 1; i <= count; ) {
+    const a = document.getElementById("input").value;
+    console.log("Input: " + a);
+    for (let i = 1; i <= count; i++ ) {
       localStorage.setItem(i, a);
-    }  
+    }
+    alert("Data saved succesfully");
 }
 
